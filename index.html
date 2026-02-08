@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Contabilidade | Soluções Financeiras Inteligentes</title>
+    
+    <!-- Fontes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVEGAÇÃO -->
+    <header>
+        <div class="container navbar" id="navbar">
+            <div class="logo">ECLIPSE<span>.</span></div>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">☰</div>
+            <ul class="nav-menu">
+                <li><a class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a class="nav-link" onclick="showPage('services')">Serviços</a></li>
+                <li><a class="nav-link" onclick="showPage('about')">Sobre</a></li>
+                <li><a class="nav-link" onclick="showPage('blog')">Blog</a></li>
+                <li><a class="cta-btn-nav" onclick="showPage('contact')">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- PÁGINAS (SEÇÕES) -->
+    
+    <!-- 1. HOME -->
+    <div id="home" class="page-section fade-in">
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="section-subtitle" style="color: var(--secondary); margin-bottom: 20px;">Contabilidade & Consultoria</span>
+                <h1>Soluções Financeiras <span>Inteligentes</span> para o Seu Negócio</h1>
+                <p>Oferecemos serviços contábeis completos e estratégicos para empresas que buscam crescimento sustentável e conformidade fiscal.</p>
+                <div>
+                    <button class="btn btn-primary" onclick="showPage('contact')">Fale com um Especialista</button>
+                    <button class="btn btn-outline" style="border-color: white; color: white;" onclick="showPage('services')">Nossos Serviços</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Serviços Destaque -->
+        <section class="section-padding services-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">O que oferecemos</span>
+                    <h2 class="section-title">Nossos Serviços Principais</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Oferecemos soluções contábeis completas para empresas de todos os tamanhos e setores.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <span class="service-icon"><i class="fas fa-chart-line"></i></span>
+                        <h3 class="service-title">Contabilidade Empresarial</h3>
+                        <p class="service-text">Gestão completa da contabilidade da sua empresa, garantindo conformidade fiscal e otimização de processos.</p>
+                        <a href="#" style="color: var(--secondary); font-weight: 600;" onclick="showPage('services')">Saiba mais →</a>
+                    </div>
+                    <div class="card service-card">
+                        <span class="service-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+                        <h3 class="service-title">Consultoria Fiscal</h3>
+                        <p class="service-text">Redução de carga tributária através de planejamento fiscal estratégico e análise de melhores regimes.</p>
+                        <a href="#" style="color: var(--secondary); font-weight: 600;" onclick="showPage('services')">Saiba mais →</a>
+                    </div>
+                    <div class="card service-card">
+                        <span class="service-icon"><i class="fas fa-users"></i></span>
+                        <h3 class="service-title">Departamento Pessoal</h3>
+                        <p class="service-text">Gestão completa de folha de pagamento, admissões, rescisões e obrigações trabalhistas.</p>
+                        <a href="#" style="color: var(--secondary); font-weight: 600;" onclick="showPage('services')">Saiba mais →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Por que escolher nós -->
+        <section class="section-padding why-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Por que nos escolher</span>
+                    <h2 class="section-title">Resultados que Transformam Negócios</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Com mais de 15 anos de experiência, ajudamos empresas a alcançarem seus objetivos financeiros.</p>
+                </div>
+                <div class="why-container">
+                    <div class="why-card">
+                        <div class="why-number">15+</div>
+                        <h3 class="why-title">Anos de Experiência</h3>
+                        <p style="color: var(--gray);">Atuando no mercado com excelência e resultados comprovados.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">500+</div>
+                        <h3 class="why-title">Clientes Atendidos</h3>
+                        <p style="color: var(--gray);">Empresas de diversos segmentos que confiam em nossos serviços.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">R$ 3.2M</div>
+                        <h3 class="why-title">Economizados em 2023</h3>
+                        <p style="color: var(--gray);">Em impostos através de planejamento fiscal inteligente.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">100%</div>
+                        <h3 class="why-title">Conformidade Fiscal</h3>
+                        <p style="color: var(--gray);">Garantia de entrega de todas as obrigações dentro dos prazos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Diferenciais -->
+        <section class="section-padding features-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Nossos diferenciais</span>
+                    <h2 class="section-title">O que Nos Torna Diferentes</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Oferecemos uma abordagem moderna e proativa para a contabilidade empresarial.</p>
+                </div>
+                <div class="features-container">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-content">
+                            <h3>Segurança e Confidencialidade</h3>
+                            <p style="color: var(--gray);">Seus dados estão protegidos com as mais avançadas tecnologias de segurança da informação.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="feature-content">
+                            <h3>Tecnologia de Ponta</h3>
+                            <p style="color: var(--gray);">Utilizamos sistemas integrados e automatizados para maior eficiência e precisão.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                        <div class="feature-content">
+                            <h3>Suporte Personalizado</h3>
+                            <p style="color: var(--gray);">Cada cliente tem um consultor dedicado para atendimento ágil e personalizado.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="feature-content">
+                            <h3>Relatórios Estratégicos</h3>
+                            <p style="color: var(--gray);">Fornecemos dashboards e relatórios que ajudam na tomada de decisão empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Clientes e Parceiros -->
+        <section class="section-padding clients-section">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Nossa rede</span>
+                    <h2 class="section-title">Clientes e Parceiros</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Trabalhamos com empresas de diversos segmentos e tamanhos.</p>
+                </div>
+                <div class="clients-grid">
+                    <div class="client-logo">
+                        <!-- Logos fictícias -->
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">TECHNOVA</div>
+                    </div>
+                    <div class="client-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">VERDE VIDA</div>
+                    </div>
+                    <div class="client-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">CONSTRUA+</div>
+                    </div>
+                    <div class="client-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">SAÚDE INTEGRAL</div>
+                    </div>
+                    <div class="client-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">GASTRONOMIA BR</div>
+                    </div>
+                    <div class="client-logo">
+                        <div style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary);">LOGÍSTICA RÁPIDA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CTA Final -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Pronto para Transformar sua Gestão Financeira?</h2>
+                <p>Agende uma consultoria gratuita com nossos especialistas e descubra como podemos ajudar sua empresa a crescer com segurança e eficiência.</p>
+                <button class="btn btn-light" onclick="showPage('contact')">Agendar Consultoria Gratuita</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- 2. SERVIÇOS DETALHADOS -->
+    <div id="services" class="page-section hidden fade-in">
+        <section class="section-padding services-detail-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Soluções completas</span>
+                    <h2 class="section-title">Nossos Serviços Contábeis</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Oferecemos um portfólio completo de serviços para atender todas as necessidades da sua empresa.</p>
+                </div>
+
+                <!-- Contabilidade Empresarial -->
+                <div class="service-category">
+                    <h3 class="cat-title">Contabilidade Empresarial</h3>
+                    <div class="service-detail-grid">
+                        <div class="card service-detail-card">
+                            <h4 style="color: var(--primary); margin-bottom: 15px;">Contabilidade Completa</h4>
+                            <p style="color: var(--gray); margin-bottom: 15px;">Gestão completa da contabilidade, incluindo escrituração, balanços, DRE e demais obrigações acessórias.</p>
+                            <ul style="color: var(--gray); margin-bottom: 20px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">• Escrituração fiscal e contábil</li>
+                                <li style="margin-bottom: 8px;">• Balanço patrimonial e DRE</li>
+                                <li style="margin-bottom: 8px;">• Obrigações acessórias (SPED, EFD, etc.)</li>
+                                <li style="margin-bottom: 8px;">• Emissão de relatórios gerenciais</li>
+                            </ul>
+                            <div class="service-price">A partir de R$ 499/mês</div>
+                            <div class="price-note">*Valor varia conforme faturamento</div>
+                        </div>
+                        
+                        <div class="card service-detail-card">
+                            <h4 style="color: var(--primary); margin-bottom: 15px;">Abertura de Empresa</h4>
+                            <p style="color: var(--gray); margin-bottom: 15px;">Processo completo de abertura de empresa, desde a consulta de viabilidade até o registro final.</p>
+                            <ul style="color: var(--gray); margin-bottom: 20px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">• Consulta de viabilidade do nome</li>
+                                <li style="margin-bottom: 8px;">• Elaboração do contrato social</li>
+                                <li style="margin-bottom: 8px;">• Registro nas juntas comerciais</li>
+                                <li style="margin-bottom: 8px;">• Obtenção de alvarás e licenças</li>
+                            </ul>
+                            <div class="service-price">R$ 899</div>
+                            <div class="price-note">*Taxas governamentais não inclusas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consultoria Fiscal -->
+                <div class="service-category">
+                    <h3 class="cat-title">Consultoria Fiscal e Tributária</h3>
+                    <div class="service-detail-grid">
+                        <div class="card service-detail-card">
+                            <h4 style="color: var(--primary); margin-bottom: 15px;">Planejamento Tributário</h4>
+                            <p style="color: var(--gray); margin-bottom: 15px;">Análise do regime tributário mais vantajoso para sua empresa, com foco em redução legal de impostos.</p>
+                            <ul style="color: var(--gray); margin-bottom: 20px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">• Análise de regime tributário (Simples, Lucro Presumido/Real)</li>
+                                <li style="margin-bottom: 8px;">• Estudo de redução de carga tributária</li>
+                                <li style="margin-bottom: 8px;">• Elaboração de pareceres fiscais</li>
+                                <li style="margin-bottom: 8px;">• Acompanhamento de alterações na legislação</li>
+                            </ul>
+                            <div class="service-price">R$ 1.299</div>
+                            <div class="price-note">*Valor para análise inicial</div>
+                        </div>
+                        
+                        <div class="card service-detail-card">
+                            <h4 style="color: var(--primary); margin-bottom: 15px;">Recuperação de Créditos</h4>
+                            <p style="color: var(--gray); margin-bottom: 15px;">Identificação e recuperação de créditos tributários que sua empresa tem direito junto ao fisco.</p>
+                            <ul style="color: var(--gray); margin-bottom: 20px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">• Análise de créditos de PIS/COFINS</li>
+                                <li style="margin-bottom: 8px;">• Recuperação de ICMS</li>
+                                <li style="margin-bottom: 8px;">• Compensação de tributos federais</li>
+                                <li style="margin-bottom: 8px;">• Assessoria em processos administrativos</li>
+                            </ul>
+                            <div class="service-price">15% do valor recuperado</div>
+                            <div class="price-note">*Só paga se houver recuperação</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary" onclick="showPage('contact')">Solicitar Orçamento Personalizado</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 3. SOBRE -->
+    <div id="about" class="page-section hidden fade-in">
+        <section class="about-hero">
+            <div class="container">
+                <h1 style="font-size: 48px; margin-bottom: 20px;">Nossa História e Missão</h1>
+                <p style="font-size: 18px; max-width: 700px; margin-left: auto; margin-right: auto; opacity: 0.9;">Há mais de 15 anos transformando a gestão financeira de empresas através de soluções contábeis inteligentes.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <h2 class="section-title" style="text-align: center;">Quem Somos</h2>
+                    <p style="color: var(--gray); margin-bottom: 30px; font-size: 17px; line-height: 1.7;">
+                        A Eclipse Contabilidade nasceu da visão de transformar a contabilidade de uma obrigação burocrática em uma ferramenta estratégica para o crescimento empresarial. 
+                        Com uma equipe multidisciplinar de contadores, analistas fiscais e consultores, desenvolvemos soluções personalizadas que vão além do cumprimento de obrigações legais.
+                    </p>
+                    <p style="color: var(--gray); margin-bottom: 40px; font-size: 17px; line-height: 1.7;">
+                        Nossa missão é simplificar a complexidade tributária brasileira, permitindo que nossos clientes foquem no que realmente importa: o crescimento do seu negócio. 
+                        Através da tecnologia e de um atendimento próximo, construímos parcerias duradouras baseadas em confiança e resultados.
+                    </p>
+                    
+                    <div style="background: var(--light-bg); padding: 40px; border-radius: 8px; margin-bottom: 50px;">
+                        <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 24px;">Nossos Valores</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                            <div>
+                                <h4 style="color: var(--secondary); margin-bottom: 10px;">Transparência</h4>
+                                <p style="color: var(--gray);">Comunicação clara e honesta em todos os processos.</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--secondary); margin-bottom: 10px;">Inovação</h4>
+                                <p style="color: var(--gray);">Busca constante por novas soluções e tecnologias.</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--secondary); margin-bottom: 10px;">Comprometimento</h4>
+                                <p style="color: var(--gray);">Dedicação total aos resultados dos nossos clientes.</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--secondary); margin-bottom: 10px;">Excelência</h4>
+                                <p style="color: var(--gray);">Padrão elevado em todos os serviços prestados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding team-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Conheça nosso time</span>
+                    <h2 class="section-title">Nossos Especialistas</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="card team-card">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=987&auto=format&fit=crop" class="team-img" alt="Diretor">
+                        <h3 class="team-name">Roberto Almeida</h3>
+                        <div class="team-role">Diretor Executivo</div>
+                        <p style="color: var(--gray);">Contador com 20 anos de experiência, especializado em planejamento tributário.</p>
+                    </div>
+                    <div class="card team-card">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=987&auto=format&fit=crop" class="team-img" alt="Gerente">
+                        <h3 class="team-name">Carla Mendes</h3>
+                        <div class="team-role">Gerente de Contabilidade</div>
+                        <p style="color: var(--gray);">Especialista em contabilidade empresarial e processos de fusões e aquisições.</p>
+                    </div>
+                    <div class="card team-card">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=988&auto=format&fit=crop" class="team-img" alt="Consultora">
+                        <h3 class="team-name">Fernanda Costa</h3>
+                        <div class="team-role">Consultora Fiscal Sênior</div>
+                        <p style="color: var(--gray);">Mestre em Direito Tributário com foco em recuperação de créditos fiscais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 4. BLOG -->
+    <div id="blog" class="page-section hidden fade-in">
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Conhecimento e insights</span>
+                    <h2 class="section-title">Blog e Artigos</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Artigos e análises sobre contabilidade, impostos e gestão empresarial.</p>
+                </div>
+
+                <div class="blog-grid">
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop" class="blog-img" alt="Impostos">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>Impostos</span>
+                                <span>15 Mar, 2024</span>
+                            </div>
+                            <h3 class="blog-title">Mudanças no Simples Nacional para 2024</h3>
+                            <p class="blog-excerpt">Entenda as principais alterações nas alíquotas e regras do Simples Nacional que afetarão sua empresa neste ano.</p>
+                            <a href="#" style="color: var(--secondary); font-weight: 600;">Continuar lendo →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop" class="blog-img" alt="Gestão">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>Gestão</span>
+                                <span>28 Fev, 2024</span>
+                            </div>
+                            <h3 class="blog-title">Como a Contabilidade Pode Aumentar sua Lucratividade</h3>
+                            <p class="blog-excerpt">Descubra estratégias contábeis que vão além do compliance e podem impactar diretamente nos seus resultados.</p>
+                            <a href="#" style="color: var(--secondary); font-weight: 600;">Continuar lendo →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card blog-card">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop" class="blog-img" alt="Tecnologia">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>Tecnologia</span>
+                                <span>10 Fev, 2024</span>
+                            </div>
+                            <h3 class="blog-title">A Transformação Digital na Contabilidade</h3>
+                            <p class="blog-excerpt">Como a automação e a inteligência artificial estão revolucionando os serviços contábeis e beneficiando as empresas.</p>
+                            <a href="#" style="color: var(--secondary); font-weight: 600;">Continuar lendo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 5. CONTATO -->
+    <div id="contact" class="page-section hidden fade-in">
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-subtitle">Entre em contato</span>
+                    <h2 class="section-title">Fale Conosco</h2>
+                    <p style="margin-bottom: 50px; color: var(--gray); max-width: 700px; margin-left: auto; margin-right: auto;">Estamos prontos para ajudar sua empresa. Entre em contato para uma consultoria gratuita.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <!-- Informações -->
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Endereço</div>
+                                <div class="info-content">
+                                    Av. Paulista, 2000 - Bela Vista<br>
+                                    São Paulo - SP, CEP: 01310-200
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Telefone & WhatsApp</div>
+                                <div class="info-content">
+                                    (11) 3333-4444<br>
+                                    (11) 99999-8888 (WhatsApp)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">Horário de Funcionamento</div>
+                                <div class="info-content">
+                                    Segunda a Sexta: 08h às 18h<br>
+                                    Sábado: 09h às 12h
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="info-label">E-mail</div>
+                                <div class="info-content">
+                                    contato@eclipsecontabilidade.com.br<br>
+                                    suporte@eclipsecontabilidade.com.br
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mapa Estático -->
+                        <div style="background: var(--gray-light); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray); margin-top: 30px;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-map" style="font-size: 40px; margin-bottom: 10px; color: var(--secondary);"></i><br>
+                                <strong>Localização no Mapa</strong><br>
+                                <small>Av. Paulista, 2000 - São Paulo/SP</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário -->
+                    <div class="contact-form-wrapper">
+                        <div class="card" style="padding: 40px;">
+                            <h3 style="color: var(--primary); margin-bottom: 25px; font-size: 24px;">Envie sua Mensagem</h3>
+                            <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Entraremos em contato em até 24 horas.');">
+                                <div class="form-group">
+                                    <label>Nome Completo*</label>
+                                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>E-mail*</label>
+                                    <input type="email" class="form-control" placeholder="seu@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Telefone*</label>
+                                    <input type="tel" class="form-control" placeholder="(11) 99999-9999" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Empresa</label>
+                                    <input type="text" class="form-control" placeholder="Nome da sua empresa">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Serviço de Interesse</label>
+                                    <select class="form-control">
+                                        <option>Contabilidade Completa</option>
+                                        <option>Planejamento Tributário</option>
+                                        <option>Departamento Pessoal</option>
+                                        <option>Abertura de Empresa</option>
+                                        <option>Consultoria Financeira</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Mensagem*</label>
+                                    <textarea rows="4" class="form-control" placeholder="Como podemos ajudar sua empresa?" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">ECLIPSE<span>.</span></div>
+                    <p class="footer-about">Especialistas em soluções contábeis inteligentes para empresas que buscam crescimento sustentável e conformidade fiscal.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <div class="footer-nav">
+                        <a onclick="showPage('home')">Home</a>
+                        <a onclick="showPage('services')">Serviços</a>
+                        <a onclick="showPage('about')">Sobre Nós</a>
+                        <a onclick="showPage('blog')">Blog</a>
+                        <a onclick="showPage('contact')">Contato</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Serviços</h3>
+                    <div class="footer-nav">
+                        <a href="#">Contabilidade Empresarial</a>
+                        <a href="#">Consultoria Fiscal</a>
+                        <a href="#">Departamento Pessoal</a>
+                        <a href="#">Abertura de Empresa</a>
+                        <a href="#">Recuperação de Créditos</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-about">Receba dicas e atualizações sobre contabilidade e gestão empresarial.</p>
+                    <div style="margin-top: 20px;">
+                        <input type="email" placeholder="Seu e-mail" style="width: 100%; padding: 12px; border-radius: 4px; border: none; margin-bottom: 10px;">
+                        <button class="btn btn-primary" style="width: 100%; padding: 12px;">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 Eclipse Contabilidade. Todos os direitos reservados. | Desenvolvido com ❤️ para empresas inteligentes
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT (LÓGICA SPA) -->
+    <script src="script.js"></script>
+</body>
+</html>
