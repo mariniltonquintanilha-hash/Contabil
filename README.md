@@ -1,108 +1,45 @@
-# Contabil
-Site de contabilidade
-Page
-📋 Visão Geral
-Landing page moderna e responsiva desenvolvida para a empresa fictícia "Eclipse Contabilidade". A página apresenta um design clean e profissional, com navegação fluida e chamadas para ação claras, ideal para demonstrar serviços contábeis e de consultoria.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-✨ Funcionalidades
-Design Responsivo - Adaptação perfeita para desktop, tablet e dispositivos móveis
+# Eclipse Contabilidade — Soluções Financeiras Inteligentes
 
-Navegação SPA - Transições suaves entre seções sem recarregamento da página
+> Site de escritório de contabilidade
 
-Estrutura Organizada - Separação clara entre HTML, CSS e JavaScript
+## 📌 Sobre o Projeto
 
-Layout Profissional - Foco na experiência do usuário para empresas de contabilidade
+Site institucional de escritório de contabilidade com serviços contábeis, áreas de atuação e formulário de contato.
 
-Elementos Interativos - Scroll suave e menu mobile otimizado
+## ✨ Funcionalidades
 
-🛠️ Tecnologias Utilizadas
-HTML5 - Estrutura semântica do conteúdo
+- Serviços contábeis completos
+- Áreas de atuação
+- Seção sobre o escritório
+- Formulário de contato
+- Design profissional e responsivo
 
-CSS3 - Estilização e design responsivo
+## 🛠️ Tecnologias Utilizadas
 
-Variáveis CSS para theming consistente
+| Tecnologia | Descrição |
+|------------|-----------|
+| **HTML5** | Estrutura semântica e acessível da página |
+| **CSS3** | Estilo visual, layout e responsividade |
+| **JavaScript** | Interatividade, manipulação do DOM e lógica do cliente |
 
-Media queries para responsividade
+## 🚀 Como Executar
 
-JavaScript - Funcionalidades interativas
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/mariniltonquintanilha-hash/Contabil.git
+   ```
+2. Abra o arquivo `index.html` no navegador.
 
-Google Fonts - Tipografias Montserrat e Source Sans Pro
+## 📁 Estrutura do Projeto
 
-Font Awesome - Ícones vetoriais escaláveis
+```
+├── index.html    → Página principal
+├── style.css     → Estilos e responsividade
+└── script.js     → Interatividade e lógica
+```
 
-📁 Estrutura do Projeto
-text
-eclipse-contabilidade/
-├── index.html          # Estrutura principal da página
-├── style.css           # Estilos e design responsivo
-└── script.js           # Funcionalidades interativas
-🚀 Como Executar
-Opção 1: Abrir Localmente
-Faça o download ou clone do repositório
+## 📄 Licença
 
-Navegue até a pasta do projeto
-
-Abra o arquivo index.html em qualquer navegador moderno
-
-Opção 2: Clonar Repositório (caso disponível)
-bash
-git clone <repository-url>
-cd <project-directory>
-💡 Como Utilizar
-Navegação
-Desktop: Utilize o menu de navegação superior para acessar diferentes seções
-
-Mobile: Clique no ícone de menu (☰) para abrir/fechar a navegação
-
-Seções Disponíveis
-Home: Apresentação da empresa
-
-Serviços: Portfolio completo de serviços contábeis
-
-Sobre: Conheça nossa equipe e valores
-
-Blog: Artigos e conteúdos especializados
-
-Contato: Formulário para envio de mensagens
-
-Formulário de Contato
-Preencha os campos obrigatórios
-
-Clique em "Enviar Mensagem" para submeter
-
-Atualmente exibe um alerta de confirmação (funcionalidade de demonstração)
-
-🔧 Personalização
-Cores do Tema
-As cores podem ser facilmente modificadas através das variáveis CSS no início do arquivo style.css:
-
-css
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    /* Adicione suas customizações aqui */
-}
-Conteúdo
-HTML: Edite index.html para modificar textos e estrutura
-
-Imagens: Substitua os placeholders por suas próprias imagens
-
-Ícones: Consulte a documentação do Font Awesome para alternar ícones
-
-📱 Responsividade
-A landing page é otimizada para:
-
-Desktop: > 1024px
-
-Tablet: 768px - 1024px
-
-Mobile: < 768px
-
-🔍 Otimizações
-Performance otimizada com carregamento eficiente de recursos
-
-Código semanticamente estruturado para melhor SEO
-
-Compatibilidade com navegadores modernos
-
+Projeto desenvolvido para fins de portfólio.
